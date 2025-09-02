@@ -7,7 +7,7 @@
 	"scripts": {
 		"dev": "gulp",
 		"build": "gulp build --build",
-		"preview": "npm run build && npx serve ./dist",
+		"preview": "npm run build && npx serve ./docs",
 		"lint:scss": "stylelint src/scss/**/*.scss --fix",
 		"zip": "gulp deployZIP --build",
 		"deployFTP": "gulp deployFTP --build",

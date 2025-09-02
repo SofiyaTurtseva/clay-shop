@@ -1,6 +1,6 @@
 import { resolve, basename } from 'node:path';
 
-const buildFolder = './dist';
+const buildFolder = './docs';
 const srcFolder = './src';
 
 export const filePaths = {
