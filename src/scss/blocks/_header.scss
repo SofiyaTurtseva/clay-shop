@@ -48,20 +48,29 @@
   }
 }
 
-/* общие стили для ссылок в меню (и десктоп, и мобилка) */
 .nav__list .nav__item a,
 .header__menu a {
   font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
   transition: opacity 0.3s ease-in-out;
-  outline: none;
-  box-shadow: none;
 
   &:hover {
     opacity: 0.8;
   }
+}
 
+.nav__list .nav__item a {
   &:focus-visible {
     outline: 2px solid $accent-color;
+    box-shadow: none;
+  }
+}
+
+.header__menu a {
+  &:focus,
+  &:focus-visible,
+  &:active {
+    outline: none;
+    box-shadow: none;
   }
 }
 
