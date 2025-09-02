@@ -1,0 +1,54 @@
+<header class="block header" id="main">
+  <nav class="header__nav">
+    <a href="#main" class="logo">Глиняная Лавка</a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#about">О нас</a></li>
+      <li class="nav__item"><a href="#video">Команда</a></li>
+      <li class="nav__item"><a href="#products">Каталог</a></li>
+      <li class="nav__item"><a href="#feedbacks">Отзывы</a></li>
+      <li class="nav__item"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="header__content">
+    <h1 class="header__title">
+      Стиль и уют <br />
+      в каждой чашке
+    </h1>
+    <p class="header__subtitle">Коллекция уникальной керамики ручной работы.</p>
+    <a href="#products" class="button header__button">Посмотреть коллекцию</a>
+  </div>
+
+  <button
+    onclick="window['menu-dialog'].showModal()"
+    class="header__menu-button header__menu-button_cmd_open"
+  >
+    <span class="visually-hidden">Показать меню</span>
+  </button>
+
+  <dialog id="menu-dialog" class="header__menu" aria-label="Меню сайта">
+    <ul>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#about">О нас</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#video">Команда</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#products">Каталог</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#feedbacks">Отзывы</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#contacts">Контакты</a>
+      </li>
+    </ul>
+    <button
+      onclick="window['menu-dialog'].close()"
+      class="header__menu-button header__menu-button_cmd_close"
+    >
+      <span class="visually-hidden">Скрыть меню</span>
+    </button>
+  </dialog>
+</header>

@@ -1,0 +1,27 @@
+@use 'base/vars' as *;
+
+.button {
+  display: inline-block;
+  background-color: $light-button-color;
+  color: $text-color;
+  font-size: clamp(0.875rem, 0.7973rem + 0.3883vw, 1.125rem);
+
+  width: max-content;
+
+  outline: none;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+
+  margin-block-start: 50px;
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $accent-color;
+  }
+}

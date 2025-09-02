@@ -1,0 +1,51 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.products {
+  background-color: $accent-bg;
+  color: $light-text-color;
+
+  .cards__wrapper {
+    display: grid;
+    gap: clamp(40px, 6vw, 100px);
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      @include tablet {
+        flex-direction: column-reverse;
+      }
+
+      .card__text {
+        max-width: 610px;
+
+        .card__title {
+          font-weight: 500;
+          font-size: clamp(1.125rem, 0.925rem + 1vw, 1.75rem);
+          color: $accent-color;
+        }
+
+        .card__info {
+          font-size: clamp(0.9375rem, 0.8792rem + 0.2913vw, 1.125rem);
+          line-height: $text-line-height;
+          margin-block-start: 40px;
+        }
+      }
+
+      .card__button {
+        padding: 18px 40px;
+      }
+    }
+  }
+
+  .cards__wrapper .card:nth-child(even) {
+    flex-direction: row-reverse;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+}

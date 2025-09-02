@@ -1,0 +1,87 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.footer {
+  background-color: $accent-bg;
+  color: $light-text-color;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+    url("../images/footer/footer-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .footer__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: clamp(40px, 8vw, 85px);
+
+    padding-block-end: 85px;
+
+    @include mobile {
+      grid-template-columns: auto;
+      justify-items: center;
+    }
+
+    .address {
+      grid-area: 2;
+    }
+
+    .footer__heading {
+      font-size: clamp(1rem, 0.6132rem + 0.7547vw, 1.25rem);
+      font-weight: 500;
+      justify-self: end;
+      text-align: right;
+
+      @include mobile {
+        padding-block-start: 25px;
+        justify-self: center;
+        text-align: center;
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 50px;
+
+      justify-self: end;
+
+      @include mobile {
+        justify-self: center;
+      }
+
+      .social {
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+
+        .social__link:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .footer__copyright, .footer__link {
+    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+    justify-self: center;
+  }
+
+  .footer__link {
+    display: block;
+    margin-block-start: 10px;
+
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent-color;
+    }
+  }
+}

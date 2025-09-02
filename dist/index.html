@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Глиняная Лавка</title>
+	<meta name="description" content="Глиняная Лавка — магазин керамических изделий ручной работы в Алматы">
+
+	<link rel="stylesheet" href="css/main.min.css?_v=20250902172540">
+
+	<link rel="icon" href="images/favicon/favicon.ico" sizes="32x32" type="image/x-icon">
+	<link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+
+	<script defer="defer" src="js/main.min.js?_v=20250902172540"></script>
+</head>
+	<body class="page">
+		<header class="block header" id="main">
+  <nav class="header__nav">
+    <a href="#main" class="logo">Глиняная Лавка</a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#about">О нас</a></li>
+      <li class="nav__item"><a href="#video">Команда</a></li>
+      <li class="nav__item"><a href="#products">Каталог</a></li>
+      <li class="nav__item"><a href="#feedbacks">Отзывы</a></li>
+      <li class="nav__item"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="header__content">
+    <h1 class="header__title">
+      Стиль и уют <br>
+      в каждой чашке
+    </h1>
+    <p class="header__subtitle">Коллекция уникальной керамики ручной работы.</p>
+    <a href="#products" class="button header__button">Посмотреть коллекцию</a>
+  </div>
+
+  <button onclick="window['menu-dialog'].showModal()" class="header__menu-button header__menu-button_cmd_open">
+    <span class="visually-hidden">Показать меню</span>
+  </button>
+
+  <dialog id="menu-dialog" class="header__menu" aria-label="Меню сайта">
+    <ul>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#about">О нас</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#video">Команда</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#products">Каталог</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#feedbacks">Отзывы</a>
+      </li>
+      <li class="nav__item">
+        <a onclick="window['menu-dialog'].close()" href="#contacts">Контакты</a>
+      </li>
+    </ul>
+    <button onclick="window['menu-dialog'].close()" class="header__menu-button header__menu-button_cmd_close">
+      <span class="visually-hidden">Скрыть меню</span>
+    </button>
+  </dialog>
+</header>
+
+		<main>
+			<section class="block about" id="about">
+  <picture>
+    <source srcset="./images/about/about-img.webp" type="image/webp">
+    <source srcset="./images/about/about-img.jpg" type="image/jpeg">
+    <img src="./images/about/about-img.png" alt="Фотография работы с глиной" class="about__image">
+  </picture>
+
+  <div class="about__content">
+    <h2 class="about__title">
+      Мы — Глиняная Лавка, маленькая мастерская, в которой каждая вещь создаётся
+      вручную с любовью к глине, теплу и уюту.
+    </h2>
+    <div class="about__text">
+      <p class="text">
+        Наши изделия — это история, вложенная в форму, текстуру и цвет. Мы
+        вдохновляемся природой, землёй, небом и простыми моментами жизни:
+        утренним кофе, ужином в кругу близких, ароматом хлеба.
+      </p>
+      <p class="text">
+        Мы верим, что вещи могут быть не только стильными, но и настоящими — с
+        неровностями, отпечатками пальцев и душой.
+      </p>
+    </div>
+  </div>
+</section>
+
+			<section class="block video" id="video">
+  <video class="video__content" muted loop playsinline poster="images/video/video-poster.png">
+    <source src="./videos/clay.webm" type="video/webm">
+    <source src="./videos/clay.mp4" type="video/mp4">
+  </video>
+
+  <button class="video__play" aria-label="Воспроизвести видео">
+    <svg class="video__icon" width="100" height="100" viewBox="0 0 101 100" fill="none">
+      <circle cx="50.2502" cy="50" r="50" fill="white"/>
+      <path d="M65.25 50L42.75 62.9904L42.75 37.0096L65.25 50Z" fill="#1D1D1F"/>
+    </svg>
+  </button>
+</section>
+
+			<section class="block products" id="products">
+  <div class="cards__wrapper">
+    <article class="card">
+  <div class="card__text">
+    <h3 class="card__title">Набор тарелок «Лён»</h3>
+    <p class="card__info">Глубокая матовая тарелка с лёгким крапом и естественной асимметрией. Создана для уютных ужинов и сервировки в стиле wabi-sabi. Размер: Ø 20 см, высота 4 см</p>
+
+    <a href="" class="button card__button">Узнать цену</a>
+  </div>
+  
+  <picture>
+    <source srcset="./images/cards/01.webp" type="image/webp">
+    <source srcset="./images/cards/01.jpg" type="image/jpeg">
+    <img src="./images/cards/01.png" alt="Набор тарелок" class="card__image">
+  </picture>
+</article><article class="card">
+  <div class="card__text">
+    <h3 class="card__title">Керамические банки «Глина и Соль»</h3>
+    <p class="card__info">Функциональный минимализм: баночка из тёмной глины с матовой крышкой ручной лепки. Подходит для хранения чая, соли, орехов. Объём: ~300 мл</p>
+
+    <a href="" class="button card__button">Узнать цену</a>
+  </div>
+  
+  <picture>
+    <source srcset="./images/cards/02.webp" type="image/webp">
+    <source srcset="./images/cards/02.jpg" type="image/jpeg">
+    <img src="./images/cards/02.png" alt="Керамические банки" class="card__image">
+  </picture>
+</article><article class="card">
+  <div class="card__text">
+    <h3 class="card__title">Кувшин «Тёплая Земля»</h3>
+    <p class="card__info">Вытянутые формы и грубоватая фактура на краях делают кувшин одновременно простым и выразительным. Подойдёт для воды, молока, домашнего сока. Объём: ~700–900 мл</p>
+
+    <a href="" class="button card__button">Узнать цену</a>
+  </div>
+  
+  <picture>
+    <source srcset="./images/cards/03.webp" type="image/webp">
+    <source srcset="./images/cards/03.jpg" type="image/jpeg">
+    <img src="./images/cards/03.png" alt="Кувшин" class="card__image">
+  </picture>
+</article>
+  </div>
+</section>
+			<section class="block feedback" id="feedbacks">
+  <div class="feedback__wrapper">
+    <div class="feedback__list">
+      <article class="feedback__card">
+        <blockquote class="feedback__text">
+          “Покупаю уже третий раз! Тепло и красота в каждой детали.”
+        </blockquote>
+        <footer class="feedback__client">Алина / <span>Алматы</span></footer>
+      </article>
+
+      <article class="feedback__card">
+        <blockquote class="feedback__text">
+          “Подарил родителям набор, мама и гости в восторге!”
+        </blockquote>
+        <footer class="feedback__client">Канжар / <span>Астана</span></footer>
+      </article>
+    </div>
+
+    <a href="" class="button feedback__button" aria-label="Купить набор после отзывов">Купить набор</a>
+  </div>
+</section>
+		</main>
+		<footer class="block footer" id="contacts">
+  <div class="footer__info">
+    <a href="#main" class="logo">Глиняная Лавка</a>
+    <address class="address">Алматы, Казахстан</address>
+
+    <p class="footer__heading">
+      Хотите что-то особенное? <br>
+      Напишите нам
+    </p>
+    
+    <ul class="socials">
+      <li class="social">
+        <a href="" class="social__link" target="_blank" rel="noopener"><img src="./images/footer/whatsapp.svg" alt="Мы в WhatsApp"></a>
+      </li>
+      <li class="social">
+        <a href="" class="social__link" target="_blank" rel="noopener"><img src="./images/footer/instagram.svg" alt="Мы в Instagram"></a>
+      </li>
+      <li class="social">
+        <a href="" class="social__link" target="_blank" rel="noopener"><img src="./images/footer/telegram.svg" alt="Мы в Telegram"></a>
+      </li>
+    </ul>
+  </div>
+
+  <p class="footer__copyright">&copy; 2025 - Все права защищены</p>
+  <a href="" class="footer__link" target="_blank" rel="noopener">Разработка сайта — Софи</a>
+</footer>
+	</body>
+</html>
