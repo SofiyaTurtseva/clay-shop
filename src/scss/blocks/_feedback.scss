@@ -2,28 +2,27 @@
 
 .feedback {
   .feedback__wrapper {
-    display: grid;
-    gap: 60px;
+    .feedback__list {
+      display: grid;
+      gap: 40px;
+      
+      .feedback__text {
+        padding-block-end: 20px;
+        font-weight: 500;
+        font-size: clamp(0.9375rem, 0.8375rem + 0.5vw, 1.25rem);
+      }
 
-    .feedback__text {
-      padding-block-end: 20px;
-      font-weight: 500;
-      font-size: clamp(0.9375rem, 0.8375rem + 0.5vw, 1.25rem);
-    }
+      .feedback__client {
+        font-size: clamp(0.875rem, 0.795rem + 0.4vw, 1.125rem);
+      }
 
-    .feedback__client {
-      font-size: clamp(0.875rem, 0.795rem + 0.4vw, 1.125rem);
-    }
-
-    .feedback__client span {
-      color: $accent-color;
+      .feedback__client span {
+        color: $accent-color;
+      }
     }
 
     .feedback__button {
-
       justify-self: start;
-
-      margin-block-start: 0;
       padding: 18px 40px;
       color: $light-text-color;
       background-color: $dark-button-color;

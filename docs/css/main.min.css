@@ -248,20 +248,16 @@ pre.code {
 .header__menu a {
   font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
   transition: opacity 0.3s ease-in-out;
+  outline: none;
+  box-shadow: none;
 }
 .nav__list .nav__item a:hover,
 .header__menu a:hover {
   opacity: 0.8;
 }
-.nav__list .nav__item a:focus,
-.header__menu a:focus {
-  outline: none;
-  box-shadow: none;
-}
 .nav__list .nav__item a:focus-visible,
 .header__menu a:focus-visible {
   outline: 2px solid #838383;
-  box-shadow: none;
 }
 
 @media (max-width: 690px) {
@@ -443,24 +439,23 @@ pre.code {
   }
 }
 
-.feedback .feedback__wrapper {
+.feedback .feedback__wrapper .feedback__list {
   display: grid;
-  gap: 60px;
+  gap: 40px;
 }
-.feedback .feedback__wrapper .feedback__text {
+.feedback .feedback__wrapper .feedback__list .feedback__text {
   padding-block-end: 20px;
   font-weight: 500;
   font-size: clamp(0.9375rem, 0.8375rem + 0.5vw, 1.25rem);
 }
-.feedback .feedback__wrapper .feedback__client {
+.feedback .feedback__wrapper .feedback__list .feedback__client {
   font-size: clamp(0.875rem, 0.795rem + 0.4vw, 1.125rem);
 }
-.feedback .feedback__wrapper .feedback__client span {
+.feedback .feedback__wrapper .feedback__list .feedback__client span {
   color: #838383;
 }
 .feedback .feedback__wrapper .feedback__button {
   justify-self: start;
-  margin-block-start: 0;
   padding: 18px 40px;
   color: #fff;
   background-color: #1d1d1f;
