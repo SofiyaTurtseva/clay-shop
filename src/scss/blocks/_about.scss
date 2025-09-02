@@ -2,11 +2,11 @@
 @use 'base/vars' as *;
 
 .about {
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   align-items: center;
   gap: 20px;
+  min-height: 100vh;
 
   @include mobile {
     min-height: auto;
@@ -16,8 +16,8 @@
     justify-self: center;
 
     .about__image {
-      max-width: 370px;
       width: 100%;
+      max-width: 370px;
       height: auto;
     }
   }
@@ -26,9 +26,9 @@
     max-width: 580px;
 
     .about__title {
-      font-size: clamp(1.125rem, 0.8532rem + 1.3592vw, 2rem);
-      font-weight: 700;
       padding-block-end: 50px;
+      font-weight: 700;
+      font-size: clamp(1.125rem, 0.8532rem + 1.3592vw, 2rem);
 
       @include mobile {
         padding-block-end: 30px;
@@ -36,8 +36,8 @@
     }
 
     .text {
-      font-size: clamp(0.9375rem, 0.8792rem + 0.2913vw, 1.125rem);
       font-weight: 300;
+      font-size: clamp(0.9375rem, 0.8792rem + 0.2913vw, 1.125rem);
       line-height: $text-line-height;
     }
 

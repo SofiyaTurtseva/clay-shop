@@ -3,7 +3,7 @@
   font-size: clamp(1rem, 0.6132rem + 0.7547vw, 1.25rem);
 
   &:focus-visible {
-    outline: none;
     border: none;
+    outline: none;
   }
 }

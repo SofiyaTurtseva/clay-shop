@@ -2,14 +2,14 @@
 @use 'base/vars' as *;
 
 .footer {
-  background-color: $accent-bg;
   color: $light-text-color;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
     url("../images/footer/footer-bg.png");
+  background-color: $accent-bg;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 
   .footer__info {
     display: grid;
@@ -29,26 +29,26 @@
     }
 
     .footer__heading {
-      font-size: clamp(1rem, 0.6132rem + 0.7547vw, 1.25rem);
-      font-weight: 500;
       justify-self: end;
+      font-weight: 500;
+      font-size: clamp(1rem, 0.6132rem + 0.7547vw, 1.25rem);
       text-align: right;
 
       @include mobile {
-        padding-block-start: 25px;
         justify-self: center;
+        padding-block-start: 25px;
         text-align: center;
       }
     }
 
     .socials {
       display: flex;
-      gap: 50px;
 
       justify-self: end;
+      gap: 50px;
 
       @include mobile {
-        justify-self: center;
+        justify-items: center;
       }
 
       .social {
@@ -66,8 +66,8 @@
   }
 
   .footer__copyright, .footer__link {
-    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
     justify-self: center;
+    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
   }
 
   .footer__link {

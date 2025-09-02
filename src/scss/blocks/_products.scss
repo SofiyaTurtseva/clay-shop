@@ -2,8 +2,8 @@
 @use 'base/vars' as *;
 
 .products {
-  background-color: $accent-bg;
   color: $light-text-color;
+  background-color: $accent-bg;
 
   .cards__wrapper {
     display: grid;
@@ -23,15 +23,15 @@
         max-width: 610px;
 
         .card__title {
+          color: $accent-color;
           font-weight: 500;
           font-size: clamp(1.125rem, 0.925rem + 1vw, 1.75rem);
-          color: $accent-color;
         }
 
         .card__info {
+          margin-block-start: 40px;
           font-size: clamp(0.9375rem, 0.8792rem + 0.2913vw, 1.125rem);
           line-height: $text-line-height;
-          margin-block-start: 40px;
         }
       }
 
