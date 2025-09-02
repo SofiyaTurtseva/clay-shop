@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -227,19 +228,6 @@ pre.code {
     display: none;
   }
 }
-.header__nav .nav__list .nav__item a {
-  font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
-  transition: opacity 0.3s ease-in-out;
-}
-.header__nav .nav__list .nav__item a:hover {
-  opacity: 0.8;
-}
-.header__nav .nav__list .nav__item a:focus {
-  outline: none;
-}
-.header__nav .nav__list .nav__item a:focus-visible {
-  outline: 2px solid #838383;
-}
 .header .header__content .header__title {
   font-weight: 600;
   font-size: clamp(1.75rem, 1.03rem + 3.6vw, 4rem);
@@ -253,6 +241,27 @@ pre.code {
 }
 .header .header__menu-button {
   display: none;
+}
+
+/* общие стили для ссылок в меню (и десктоп, и мобилка) */
+.nav__list .nav__item a,
+.header__menu a {
+  font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+  transition: opacity 0.3s ease-in-out;
+}
+.nav__list .nav__item a:hover,
+.header__menu a:hover {
+  opacity: 0.8;
+}
+.nav__list .nav__item a:focus,
+.header__menu a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.nav__list .nav__item a:focus-visible,
+.header__menu a:focus-visible {
+  outline: 2px solid #838383;
+  box-shadow: none;
 }
 
 @media (max-width: 690px) {
@@ -289,12 +298,6 @@ pre.code {
     block-size: 100%;
     max-block-size: 100%;
     translate: 100%;
-  }
-  .header__menu a:focus {
-    outline: none;
-  }
-  .header__menu a:focus-visible {
-    outline: 2px solid #838383;
   }
   .header__menu[open] {
     translate: 0;
@@ -525,6 +528,7 @@ pre.code {
 }
 .footer .footer__copyright, .footer .footer__link {
   display: block;
+  margin-inline: auto;
   text-align: center;
   font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
 }

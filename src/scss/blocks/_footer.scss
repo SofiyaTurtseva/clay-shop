@@ -67,6 +67,7 @@
 
   .footer__copyright, .footer__link {
     display: block;
+    margin-inline: auto;
     text-align: center;
     font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
   }
