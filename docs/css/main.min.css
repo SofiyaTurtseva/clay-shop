@@ -313,6 +313,7 @@ pre.code {
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-items: center;
   align-items: center;
   gap: 20px;
   min-height: 100vh;
@@ -336,7 +337,7 @@ pre.code {
 .about .about__content .about__title {
   padding-block-end: 50px;
   font-weight: 700;
-  font-size: clamp(1.125rem, 0.8532rem + 1.3592vw, 2rem);
+  font-size: clamp(1.125rem, 0.965rem + 0.8vw, 1.625rem);
 }
 @media (max-width: 530px) {
   .about .about__content .about__title {
@@ -422,7 +423,7 @@ pre.code {
 .products .cards__wrapper .card .card__text .card__title {
   color: #838383;
   font-weight: 500;
-  font-size: clamp(1.125rem, 0.925rem + 1vw, 1.75rem);
+  font-size: clamp(1.125rem, 1.005rem + 0.6vw, 1.5rem);
 }
 .products .cards__wrapper .card .card__text .card__info {
   margin-block-start: 40px;

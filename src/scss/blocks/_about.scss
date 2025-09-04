@@ -4,6 +4,7 @@
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-items: center;
   align-items: center;
   gap: 20px;
   min-height: 100vh;
@@ -28,7 +29,7 @@
     .about__title {
       padding-block-end: 50px;
       font-weight: 700;
-      font-size: clamp(1.125rem, 0.8532rem + 1.3592vw, 2rem);
+      font-size: clamp(1.125rem, 0.965rem + 0.8vw, 1.625rem);
 
       @include mobile {
         padding-block-end: 30px;
